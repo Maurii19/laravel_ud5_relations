@@ -21,7 +21,7 @@
 
     <tr>
       <td>{{ $proyecto->id }}</td>
-      <td>{{ $proyecto->nombre }}</td>
+      <td><a href="/proyecto/{{ $proyecto->id }}">{{ $proyecto->nombre }}</a></td>
       <td>{{ $proyecto->titulo }}</td>
       <td><a href="/empleado/{{ $proyecto->empleado->id }}">{{ $proyecto->empleado->nombre }}</a></td>
     

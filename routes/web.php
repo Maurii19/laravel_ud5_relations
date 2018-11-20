@@ -19,3 +19,6 @@ Route::get('/empleados', ['as'=>'empleados','uses'=>'EmpleadoController@index'])
 Route::get('/empleado/{id}', ['as'=>'empleado','uses'=>'EmpleadoController@get']);
 Route::get('/departamentos', ['as'=>'departamentos','uses'=>'DepartamentoController@index']);
 Route::get('/departamento/{id}', ['as'=>'departamento','uses'=>'DepartamentoController@get']);
+
+Route::get('/formEmpleado', ['as'=>'formulario_de_registro', 'uses'=>'DepartamentoController@getForm']);
+Route::post('/postFormEmpleado', 'EmpleadoController@store');

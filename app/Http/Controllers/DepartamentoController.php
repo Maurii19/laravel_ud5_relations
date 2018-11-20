@@ -21,4 +21,9 @@ class DepartamentoController extends Controller
   	  $departamento = Departamento::find($id);
       return view ('departamentos.departamento', ['departamento'=>$departamento]);
   }
+  public function getForm(){
+    $departamentos = Departamento::all();
+    return view('form.formEmpleado', ['departamentos'=>$departamentos]);
+  }
+  
 }

@@ -21,11 +21,11 @@
       @foreach ($departamentos as $departamento)
 
         <td>
-          <a href="/departamento/{{ $departamento->id }}"> {{ $departamento->id }}</a>
+           {{ $departamento->id }}
         </td>
         
         <td>
-          {{ $departamento->nombre }}
+          <a href="/departamento/{{ $departamento->id }}">{{ $departamento->nombre }}</a>
           
         </td>
         
