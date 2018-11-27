@@ -20,7 +20,7 @@ class CrearTablaEmpleados extends Migration
             $table->string('apellido2');
             $table->string('email');
             $table->string('telefono');
-            $table->unsignedInteger('departamento_id');
+            $table->integer('departamento_id');
             //$table->foreign('departamento_id')->references('id')->on('departamentos');    
            // $table->unsignedInteger('proyecto_id');
             //$table->foreign('proyecto_id')->references('id')->on('proyectos');    
